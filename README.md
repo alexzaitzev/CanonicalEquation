@@ -2,8 +2,8 @@
 Utility to canonizing equations
 
 It works in two modes:
-1. Console
-2. From file
+* Console
+* From file
 
 To use it from console, type
 ``` sh

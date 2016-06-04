@@ -122,11 +122,7 @@ namespace CanonicalEquation.Summand
 
         public bool IsZero()
         {
-            if (Math.Abs(Number) < 0.0000000001)
-            {
-                return true;
-            }
-            return false;
+            return Math.Abs(Number) < Epsilon;
         }
 
         public override string ToString()

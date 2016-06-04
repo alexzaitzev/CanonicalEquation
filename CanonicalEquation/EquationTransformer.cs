@@ -18,7 +18,7 @@ namespace CanonicalEquation
 
         public string MakeCanonical(string equation)
         {
-            var normalEquation = NormalizedString(equation);
+            var normalEquation = NormalizeString(equation);
 
             var normalEquationParts = normalEquation.Split('=');
             ParseEquation(normalEquationParts[0], false);
@@ -58,7 +58,7 @@ namespace CanonicalEquation
             return result.Append("= 0").ToString();
         }
 
-        private string NormalizedString(string equation)
+        private string NormalizeString(string equation)
         {
             return equation.Replace(" ", string.Empty);
         }

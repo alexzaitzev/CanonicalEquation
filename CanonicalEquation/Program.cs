@@ -21,17 +21,17 @@ namespace CanonicalEquation
 
                 MakeEquationCanonicalFromConsole(transformer);
             }
-            catch (ArgumentException ae)
+            catch (ArgumentException exception)
             {
-                Console.WriteLine("Error occurred in command line arguments: {0}", ae);
+                Console.WriteLine("Error occurred in command line arguments: {0}", exception);
             }
-            catch (FileNotFoundException fnfe)
+            catch (FileNotFoundException exception)
             {
-                Console.WriteLine("Input file was not found: {0}", fnfe);
+                Console.WriteLine("Input file was not found: {0}", exception);
             }
-            catch (Exception e)
+            catch (Exception exception)
             {
-                Console.WriteLine("Unexpected error occured: {0}", e);
+                Console.WriteLine("Unexpected error occured: {0}", exception);
             }
         }
 
